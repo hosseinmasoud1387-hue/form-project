@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: radial-gradient(circle, #182c3c 0%, #07121d 55%, #02070d 100%);
+}
+
+.container{
+    width: 570px;
+    height: 570px;
+    border-radius: 50%;
+    border: 3px solid #00faff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101D29;
+    box-shadow: 
+        0 0 15px #00faff,
+        0 0 35px #00faff,
+        0 0 70px rgba(0, 255, 255, 0.5);
+}
+
+.container .form-description{
+    width: 280px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.form-description h1{
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 10px #00faff,
+        0 0 20px #00faff;
+}
+
+.form-description p{
+    color: #636363;
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+.form-description .input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.input-box .input-element{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #263C4D;
+    padding-inline: 15px;
+    background: #06131E;
+}
+
+.input-box .input-label{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: #00faff;
+    pointer-events: none;
+    transition: 
+        transform 0.3s ease,
+        font-size 0.3s ease;
+}
+
+.input-box .input-element:focus ~ .input-label,
+.input-box .input-element:not(:placeholder-shown) ~ .input-label{
+    transform: translateY(-30px);
+    font-size: 11px;
+}
+
+.form-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #636363;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.form-check label{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.form-check input{
+    accent-color: #00faff;
+}
+
+.form-check a{
+    text-decoration: none;
+    color: #00faff;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid #00faff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    box-shadow: 
+        0 0 8px rgba(0, 255, 255, 0.5),
+        0 0 8px rgba(0, 255, 255, 0.15);
+        transition: 
+            color 0.3s,
+            background 0.3s,
+            box-shadow 0.3s;
+}
+
+.btn:hover{
+    color: #06131E;
+    background: #00faff;
+    box-shadow: 
+        0 0 15px #00faff,
+        0 0 30px #00faff;
+}
+
+.signup{
+    color: #636363;
+    font-size: 12px;
+}
+
+.signup a{
+    text-decoration: none;
+    color: #00faff;
+}
